@@ -616,7 +616,7 @@ public function owcaTavern():void {
 	clearOutput();
 	outputText(images.showImage("location-owca-tavern"));
 	menu();
-	outputText("The tavern is nice and cozy; there are a few tables and chairs scattered around in no ordered pattern, and most clients here appear to belong to the same species.  By the crude wooden bar, you see a list of all the current drinks on sale:\n<i>");
+	outputText("The tavern is nice and cozy; there are a few tables and chairs scattered around in no ordered pattern, and most clients here appear to belong to the same species.  By the crude wooden bar, you see a list of all the current drinks on sale:\n");
 	//SheepMk
 	
 	outputText("\nSheep Milk Bottle: " + (180 - flags[kFLAGS.OWCAS_ATTITUDE]) + " gems");
@@ -655,8 +655,6 @@ public function owcaTavern():void {
 	} else {
 		addButton(4, "Clovis", owcaBuySetup, consumables.CLOVERS);
 	}
-	
-	outputText("</i>");
 	
 	addButton(14, "Back", gangbangVillageStuff);
 }
